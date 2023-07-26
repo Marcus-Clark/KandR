@@ -1,0 +1,1 @@
+daytab * [13] int

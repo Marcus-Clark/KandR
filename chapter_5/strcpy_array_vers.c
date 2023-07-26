@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void my_strcpy(char *s, char *t);
+
+int main() {
+	char s[100];
+	char t[] = "world";
+	
+	printf("Contents of s before copying is: %s\n", s);
+	my_strcpy(s,t);
+	printf("Contents of s after copying is: %s\n", s);
+	
+	return 0;
+}
+
+/* my_strcpy: copy t to s; array subscript version */
+
+void my_strcpy(char *s, char *t) {
+	int i;
+	
+	i = 0;
+	while ((s[i] = t[i]) != '\0')
+		i++;
+	}
